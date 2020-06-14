@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <h2>My Todo's:</h2>
+    <div></div>
+    <script>
+      const { ipcRenderer } = require("electron");
+      ipcRenderer.on("todos", (event, todos) => {
+        let lists = '';
+        todos && todos.map((todo) => {
+            lists += `<li>${todo}</li>`;
+        });
+        document.querySelector("div").innerHTML = `<ul>${lists}</ul>`;
+      });
+    </script>
+  </body>
+</html>
