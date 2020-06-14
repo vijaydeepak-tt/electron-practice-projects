@@ -9,7 +9,7 @@
   },
   "author": "Vijay Deepak",
   "dependencies": {
-    "electron": "~1.6.2",
+    "electron": "~9.0.4",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",
