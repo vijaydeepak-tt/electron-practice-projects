@@ -1,0 +1,22 @@
+{
+  "name": "electron-master",
+  "version": "1.0.0",
+  "description": "An electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec 'electron .'",
+    "reset": "git reset --hard",
+    "browser:inspect": "electron --inspect=5858 ."
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "browser:inspect:url": "chrome://inspect",
+  "author": "Vijay Deepak",
+  "devDependencies": {
+    "electron": "^9.0.4",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {}
+}
