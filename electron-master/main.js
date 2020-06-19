@@ -19,6 +19,17 @@ function createWindow() {
   // Open DevTools - Remove for PRODUCTION!
   mainWindow.webContents.openDevTools();
 
+  // let i = 0;
+  // const interval = setInterval(() => {
+  //   if (i > 1) {
+  //     clearInterval(interval);
+  //     mainWindow.setProgressBar(0);
+  //   } else {
+  //     mainWindow.setProgressBar(i);
+  //     i += 0.1;
+  //   }
+  // }, 1000);
+
   // Listen for window being closed
   mainWindow.on("closed", () => {
     mainWindow = null;
